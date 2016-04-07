@@ -1,0 +1,13 @@
+<h1>Welcome!</h1>
+<div ng-show="polls.length === 0">
+    <p>It looks as if you haven't made any polls yet. To make one, please go <a href="#/newPoll">here</a>.</p>
+</div>
+<div ng-hide="polls.length === 0">
+    <h2> This is a list of the polls you created. </h2>
+    <div class="list-group">
+      <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item">
+        {{poll.title}}
+    </a>
+    </div>
+</div>
+

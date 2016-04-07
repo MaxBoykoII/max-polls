@@ -1,0 +1,9 @@
+<h1>Welcome to the home page! </h1>
+
+
+<div class="list-group">
+    <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item">
+        {{poll.title}}
+    </a>
+
+</div>
