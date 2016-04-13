@@ -3,21 +3,43 @@ body {
     padding-right: 5%;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
 * {
     margin: 0;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
+
 .wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -155px;
+    /* the bottom margin is the negative value of the footer's height */
 }
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
+
+.footer,
+.push {
+    height: 155px;
+    /* .push must be the same height as .footer */
+}
+
+.center {
+    width: 50%;
+    margin: 5% auto;
+}
+
+.btn-danger.center {
+    display: block;
+}
+
+.list-group-item:hover {
+    background-color: black !important;
+    color: white !important;
 }
