@@ -15,21 +15,7 @@ html,
 body {
     height: 100%;
 }
-
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -155px;
-    /* the bottom margin is the negative value of the footer's height */
-}
-
-.footer,
-.push {
-    height: 155px;
-    /* .push must be the same height as .footer */
-}
-
+ 
 .center {
     width: 50%;
     margin: 5% auto;
@@ -39,7 +25,12 @@ body {
     display: block;
 }
 
-.list-group-item:hover {
-    background-color: black !important;
+
+a nav {
+    color: white;
+}
+
+.navbar-brand {
     color: white !important;
 }
+

@@ -1,9 +1,12 @@
-<h1>Welcome to the home page! </h1>
+<div class='panel panel-info'>
+    <div class='panel-heading'>
+        <span class="glyphicon glyphicon-globe"></span> All Ongoing Polls</div>
 
 
-<div class="list-group">
-    <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item">
+    <div class="list-group panel-body">
+        <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item">
         {{poll.title}}
     </a>
 
+    </div>
 </div>

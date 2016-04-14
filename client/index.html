@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html >
 <html lang="en" ng-app="MiracleMorning">
 
 <head>
@@ -10,33 +10,46 @@
 </head>
 
 <body>
-    <nav ng-controller="navController" class="navbar navbar-default navbar-inverse" ng-cloak>
+    <nav ng-controller="navController" class="navbar navbar-inverse" ng-cloak>
         <div class="container-fluid">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">Max Polls</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#/">Home</a></li>
-                <li><a href="#/login" ng-hide="isLoggedIn()">Login</a></li>
-                <li><a href="#/user" ng-show="isLoggedIn()"> My Polls</a></li>
-                <li><a href="#/newPoll" ng-show="isLoggedIn()">Create a new Poll!</a></li>
-                <li><a href="#/register" ng-hide="isLoggedIn()">Register</a></li>
-                <li ng-show="isLoggedIn()">
-                    <button type="button" class="btn btn-default btn-sm navbar-btn" ng-click="logout()">
-                        <span class="glyphicon glyphicon-log-out"></span> Log out
-                    </button>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li class="active"><a href="#/user" ng-show="isLoggedIn()"> My Polls </a>
+                    </li>
+                    <li class="active"><a href="#/newPoll" ng-show="isLoggedIn()"><span class='glyphicon glyphicon-plus'></span> Create a new Poll</a></li>
+                    <li class="active"><a href="#/register" ng-hide="isLoggedIn()">Register</a></li>
+                    <li class="active"><a href="#/login" ng-hide="isLoggedIn()">Login 
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    </a>
+                    </li>
+                    <li class="active">
+                        <a href="" ng-show="isLoggedIn()" ng-click="logout()">
+                        Log out  <span class="glyphicon glyphicon-log-out"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+    <!-- Main container -->
+    <div class="container-fluid" id="main">
+        <div id="view" ng-view></div>
 
-    <div class="container-fluid wrapper" ng-view></div>
-     <div class="push"></div>
- </div>
- <div class="footer well">
-   <p>This “fcc-voting” application was built by Max Boyko (@MBoyko92) of FreeCodeCamp.</p>
- </div>
+
+        <div class="footer">
+            <p>This “fcc-voting” application was built by Max Boyko (@MBoyko92) of freeCodeCamp.</p>
+        </div>
+    </div>
     <!-- Load the JavaScript Libraries -->
     <script src="/js/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
