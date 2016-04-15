@@ -25,19 +25,22 @@ a nav {
 }
 
 .modal {
-    width: 50%;
-    height: 65%;
+    width: 60%;
+    height: 82%;
     background: white;
     margin: auto auto;
+    overflow: hidden !important;
 }
 
-textarea {
-    width: 75%;
+.modal-responsive {
+    width: 75% !important;
 }
+
 
 form input {
     display: block;
 }
+ 
 
 .modal-backdrop {
     opacity: 0.5 !important;

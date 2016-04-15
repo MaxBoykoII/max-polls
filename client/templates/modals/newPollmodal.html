@@ -1,27 +1,26 @@
 <div class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-header">
-            <!-- [1] Invoke $modal.$hide() on click -->
             <button type="button" class="close" ng-click="$hide()">
                 &times;
             </button>
             <h4 class="modal-title"> Create a New Poll</h4>
         </div>
-        <form>
+        <form name="pollForm">
             <div class="modal-body">
                 <div class="form-group">
                     <label> Title</label>
-                    <input type="text" ng-model="input.title" placeholder="Name your Poll" class="form-control" required>
+                    <input type="text" ng-model="input.title" placeholder="Name your Poll" class="form-control modal-responsive" ng-required="true">
                 </div>
                 <div>
                     <label> Options </label>
                     <p>Put each option on its own line.</p>
-                    <textarea ng-model="input.options" class="form-control" required></textarea>
+                    <textarea ng-model="input.options" class="form-control modal-responsive" ng-required="true"></textarea>
 
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-success" ng-click="submit()">Create</button>
+            <div class="modal-footer modal-responsive">
+                <button type="submit" class="btn btn-success" ng-click="submit()" ng-disabled="!pollForm.$valid">Create</button>
                 <button type="button" class="btn btn-danger" ng-click="$hide()"> Cancel</button>
             </div>
         </form>
