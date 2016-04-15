@@ -7,15 +7,6 @@ body {
     display: none;
 }
 
-* {
-    margin: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
- 
 .center {
     width: 50%;
     margin: 5% auto;
@@ -25,7 +16,6 @@ body {
     display: block;
 }
 
-
 a nav {
     color: white;
 }
@@ -34,3 +24,25 @@ a nav {
     color: white !important;
 }
 
+.modal {
+    width: 50%;
+    height: 65%;
+    background: white;
+    margin: auto auto;
+}
+
+textarea {
+    width: 75%;
+}
+
+form input {
+    display: block;
+}
+
+.modal-backdrop {
+    opacity: 0.5 !important;
+}
+
+.footer {
+    margin-top: 2%;
+}

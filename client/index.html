@@ -4,7 +4,7 @@
 <head>
     <title>Max Polls</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/basic.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/angular.chartjs/0.7.6/angular-chart.css">
 </head>
@@ -25,7 +25,7 @@
                     <li class="active"><a href="#/">Home</a></li>
                     <li class="active"><a href="#/user" ng-show="isLoggedIn()"> My Polls </a>
                     </li>
-                    <li class="active"><a href="#/newPoll" ng-show="isLoggedIn()"><span class='glyphicon glyphicon-plus'></span> Create a new Poll</a></li>
+                    <li class="active"><a href="" ng-show="isLoggedIn()" ng-click="showModal()"><span class='glyphicon glyphicon-plus'></span> Create a new Poll</a></li>
                     <li class="active"><a href="#/register" ng-hide="isLoggedIn()">Register</a></li>
                     <li class="active"><a href="#/login" ng-hide="isLoggedIn()">Login 
                     <span class="glyphicon glyphicon-log-in"></span>
@@ -51,13 +51,14 @@
         </div>
     </div>
     <!-- Load the JavaScript Libraries -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/0.8.8/angular-chart.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.8/angular-strap.min.js"></script>
+    <srcipt src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.8/angular-strap.tpl.min.js"></srcipt>
     <!--Load modules-->
     <script src="/js/app.js"></script>
 

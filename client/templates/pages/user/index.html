@@ -1,16 +1,12 @@
 <div class="panel panel-info">
-  <div class='panel-heading' ng-hide="polls.length === 0">
-    <span class="glyphicon glyphicon-globe"></span> Your Ongoing Polls
-  </div>
+  <div class='panel-heading'> <span class="glyphicon glyphicon-globe"></span> Your Ongoing Polls </div>
   <div ng-hide="polls.length === 0">
-    <div class="list-group panel-body">
-      <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item">
-        {{poll.title}}
-    </a>
+    <div class="list-group panel-body"> <a ng-href="#/poll/{{poll['_id']}}" ng-repeat="poll in polls" class="list-group-item"> 
+    {{poll.title}}
+  </a>
     </div>
   </div>
-
   <div ng-if="polls.length === 0" class="panel-body">
-    <p>It looks as if you haven't made any polls yet. To make one, please go <a href="#/newPoll">here</a>.</p>
+    <p>It looks as if you haven't made any polls yet. To make one, please go tap the <span class='glyphicon glyphicon-plus'></span> on the navigation bar.</p>
   </div>
 </div>

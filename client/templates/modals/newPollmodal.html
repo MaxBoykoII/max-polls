@@ -1,0 +1,30 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <!-- [1] Invoke $modal.$hide() on click -->
+            <button type="button" class="close" ng-click="$hide()">
+                &times;
+            </button>
+            <h4 class="modal-title"> Create New Poll</h4>
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label> Title</label>
+                    <input type="text" ng-model="input.title" placeholder="Name your Poll" required>
+                </div>
+                <div>
+                    <label> Options </label>
+                    <p>Put each option on its own line.</p>
+                    <textarea ng-model="input.options" required></textarea>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success" ng-click="submit()">Create</button>
+                <button type="button" class="btn btn-danger"
+                ng-click="$hide()"> Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

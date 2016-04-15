@@ -36,12 +36,6 @@ angular.module('MiracleMorning')
                     restricted: false
                 }
             })
-            .when('/newPoll', {
-                templateUrl: "/templates/pages/newPoll/index.html",
-                access: {
-                    restricted: true
-                }
-            })
             .when('/user', {
                 templateUrl: "/templates/pages/user/index.html",
                 controller: 'userController',
