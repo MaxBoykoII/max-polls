@@ -1,4 +1,4 @@
-angular.module('MiracleMorning', ['ngRoute', 'chart.js', 'mgcrea.ngStrap']).run(function($rootScope, $location, $route, Authenticate) {
+angular.module('MaxPolls', ['ngRoute', 'chart.js', 'mgcrea.ngStrap']).run(function($rootScope, $location, $route, Authenticate) {
     $rootScope.$on('$routeChangeStart',
         function(event, next, current) {
             Authenticate.getUserStatus();

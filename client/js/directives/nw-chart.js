@@ -1,4 +1,4 @@
-angular.module("MiracleMorning").directive("nwChart", function() {
+angular.module('MaxPolls').directive("nwChart", function() {
         return {
             restrict: "E",
             scope: false,

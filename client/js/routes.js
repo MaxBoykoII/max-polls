@@ -1,4 +1,4 @@
-angular.module('MiracleMorning')
+angular.module('MaxPolls')
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {

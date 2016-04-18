@@ -1,4 +1,4 @@
-angular.module("MiracleMorning").controller("pollController", ['$scope', '$routeParams', '$rootScope', function($scope, $routeParams, $rootScope) {
+angular.module('MaxPolls').controller("pollController", ['$scope', '$routeParams', '$rootScope', function($scope, $routeParams, $rootScope) {
     $scope.id = $routeParams.id;
     $scope.username = $rootScope.username;
      $scope.isLoggedIn = function(){

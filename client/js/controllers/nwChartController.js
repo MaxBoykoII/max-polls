@@ -1,4 +1,4 @@
-angular.module('MiracleMorning').controller('nwChartController', ['$scope', '$http', '$location', function($scope, $http, $location) {
+angular.module('MaxPolls').controller('nwChartController', ['$scope', '$http', '$location', function($scope, $http, $location) {
     
     $http({
         method: 'GET',

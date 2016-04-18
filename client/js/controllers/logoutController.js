@@ -1,4 +1,4 @@
-angular.module('MiracleMorning').controller("logoutController", ['$scope', '$location', 'Authenticate', function($scope, $location, Authenticate) {
+angular.module('MaxPolls').controller("logoutController", ['$scope', '$location', 'Authenticate', function($scope, $location, Authenticate) {
 
     $scope.logout = function() {
         Authenticate.logout()

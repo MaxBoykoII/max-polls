@@ -1,4 +1,4 @@
-angular.module("MiracleMorning").controller("navController", ['$scope', '$rootScope', 'Authenticate', '$location', '$modal', '$http', function($scope, $rootScope, Authenticate, $location, $modal, $http) {
+angular.module('MaxPolls').controller("navController", ['$scope', '$rootScope', 'Authenticate', '$location', '$modal', '$http', function($scope, $rootScope, Authenticate, $location, $modal, $http) {
 
     // [1] function to check if user is authenticated
     $scope.isLoggedIn = function() {

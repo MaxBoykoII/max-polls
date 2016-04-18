@@ -1,4 +1,4 @@
-angular.module('MiracleMorning').controller("loginController", ['$scope', '$location', 'Authenticate', function($scope, $location, Authenticate) {
+angular.module('MaxPolls').controller("loginController", ['$scope', '$location', 'Authenticate', function($scope, $location, Authenticate) {
 
  
     $scope.user = null;

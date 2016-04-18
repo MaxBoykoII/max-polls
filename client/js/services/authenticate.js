@@ -1,4 +1,4 @@
-angular.module('MiracleMorning').factory("Authenticate", ['$http', '$q', '$rootScope',function AuthenticateFactory($http, $q, $rootScope) {
+angular.module('MaxPolls').factory("Authenticate", ['$http', '$q', '$rootScope',function AuthenticateFactory($http, $q, $rootScope) {
     var user = false;
  
     function getUserStatus() {
